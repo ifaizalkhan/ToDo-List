@@ -6,6 +6,9 @@ function addNewCard() {
   if (val !== "") {
     addCardToList(val, "to-do");
   }
+  else{
+    alert("Oops!! Please enter a task to continue..")
+  }
 }
 
 function addCardToList(title, id) {
@@ -100,3 +103,4 @@ function justCloseIt(){
   bg.innerHTML = "";
   bg.style.display = "none";
 }
+

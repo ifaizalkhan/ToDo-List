@@ -49,10 +49,10 @@ window.onload = function () {
     toggleIcon3();
   }, 10);
   dragndrop();
-  addCardToList("Add new task to list", "to-do");
-  addCardToList("Learn Backend", "in-progress");
-  addCardToList("Practice DSA", "in-progress");
-  addCardToList("Learn React", "completed");
-  addCardToList("Make mini-project", "completed");
-  addCardToList("Get Started", "completed");
+  addCardToList("Do Homework", "to-do");
+  addCardToList("Watch The Office (Ep-4)", "in-progress");
+  addCardToList("Clean Fish Bowl", "in-progress");
+  addCardToList("Gym", "completed");
+  addCardToList("Cycling", "completed");
+  addCardToList("Purchase Groceries", "completed");
 };
