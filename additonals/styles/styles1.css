@@ -240,6 +240,10 @@
     outline: none;
   }
 
+  .place-holder::placeholder  { 
+    color: #000000a6 !important
+  }
+
   .add-card > button{
     cursor: pointer;
     background-color:#aa34f9;

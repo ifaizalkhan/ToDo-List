@@ -4,6 +4,7 @@ function toggleMode() {
     let lh = document.getElementsByClassName("list-heading");
     let td = document.querySelector(".add-card");
     let to = document.querySelector("#to-do");
+    let tdi=document.querySelector('#to-do-input');
     let ip = document.querySelector("#in-progress");
     let co = document.querySelector("#completed");
     let mh = document.querySelector(".main-heading");
@@ -12,6 +13,7 @@ function toggleMode() {
     to.classList.toggle("special-class1");
     ip.classList.toggle("special-class2");
     co.classList.toggle("special-class3");
+    tdi.classList.toggle("place-holder")
   
     if (!darkMode) {
       document.body.style.backgroundColor = "white";
