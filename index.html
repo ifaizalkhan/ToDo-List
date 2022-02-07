@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do List</title>
+	<meta charset="UTF-8" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link rel="shortcut icon" href="./additonals/icons/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="./additonals/styles/styles1.css">
+	<link rel="stylesheet" href="./additonals/styles/styles2.css">
+</head>
+
+<body>
+	<nav class="navbar">
+	<img class="logo" src="./additonals/icons/logo6.png" alt="logo">
+	<h1 class="main-heading" style="text-align: center; padding: 10px; color: white;">To-Do List</h1>
+	<label class="switch">
+		<input type="checkbox" class="toggle-mode" onclick="toggleMode()">
+		<span class="slider round"></span>
+		<i class="fas fa-moon stats1" ></i>
+		<i class="fas fa-sun stats2" ></i>
+	</label>
+    </nav>
+	<div id="bg">
+	</div>
+	<div id="main-container">
+		<div class="top-container">
+			<div class="add-card">
+				<input  type="text" id='to-do-input'>
+				<button onclick="addNewCard()">Add</button>
+			</div>
+		</div>
+		<div class="bottom-container">
+
+			<div class="list-container" onmouseenter="toggleIcon1()">
+				<div class="list-heading">
+					<h3 class="list-title">To Do</h3>
+				</div>
+				<div class="list" id='to-do'>
+				</div>
+			</div>
+
+			<div class="list-container" onmouseenter="toggleIcon2()">
+				<div class="list-heading">
+					<h3 class="list-title">In Progress</h3>
+				</div>
+				<div class="list" id="in-progress">
+				</div>
+			</div>
+
+			<div class="list-container" onmouseenter="toggleIcon3()">
+				<div class="list-heading">
+					<h3 class="list-title">Completed</h3>
+				</div>
+				<div class="list" id='completed'>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<script src="./additonals/script/script1.js"></script>
+	<script src="./additonals/script/script2.js"></script>
+	<script src="./additonals/script/script3.js"></script>
+</body>
+
+</html>
